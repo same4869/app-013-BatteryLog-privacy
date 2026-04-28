@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技术支持 · 元气手账 (iOS)</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+      background: #0b0f17;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 48px 20px 80px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    header .icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #f1f5f9;
+      line-height: 1.2;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .card {
+      background: #171f2e;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #f1f5f9;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #94a3b8;
+    }
+
+    .card a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .faq-item {
+      margin-bottom: 16px;
+    }
+
+    .faq-item h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin-bottom: 4px;
+    }
+
+    .faq-item p {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+
+    .contact-btn {
+      display: block;
+      text-align: center;
+      background: #38bdf8;
+      color: #0f172a;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      margin-top: 24px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #475569;
+    }
+
+    @media (prefers-color-scheme: light) {
+      body { background: #f8fafc; color: #1e293b; }
+      .card { background: #ffffff; border-color: #e2e8f0; }
+      .card h2 { color: #0f172a; }
+      .card p { color: #475569; }
+      .faq-item h3 { color: #1e293b; }
+      .faq-item p { color: #475569; }
+      header h1 { color: #0f172a; }
+      .contact-btn { background: #0284c7; color: #ffffff; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="icon">⚡</div>
+      <h1>元气手账</h1>
+      <p>技术支持 · Technical Support</p>
+    </header>
+
+    <div class="card">
+      <h2>常见问题 FAQ</h2>
+
+      <div class="faq-item">
+        <h3>数据存在哪里？安全吗？</h3>
+        <p>所有数据仅存储在你的 iPhone/iPad 本地，使用 Apple SwiftData 加密。我们没有服务器，不上传任何数据。卸载 App 即永久删除所有数据。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>换手机了数据怎么办？</h3>
+        <p>通过 iTunes/Finder 备份或 iCloud 设备备份恢复到新手机时，App 数据会一起迁移。你也可以在"我的手账 → 导出全部数据"中导出 CSV 备份。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Pro 是订阅还是买断？</h3>
+        <p>Pro 是一次性买断（永久），不是订阅。购买一次后永久解锁所有 Pro 功能。如果换设备，可以通过"恢复购买"找回。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>能量数值怎么定？</h3>
+        <p>没有标准答案，凭你的感觉来。一顿好饭 +10~15，一场烂会 -25~30，深度工作 -15~20。用几天后你会找到属于自己的刻度。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>小组件不更新怎么办？</h3>
+        <p>小组件每 15 分钟自动刷新一次。如果长时间未更新，尝试：1) 在 App 内记录一条，触发即时刷新；2) 移除并重新添加小组件。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>"明日预测"是怎么算的？</h3>
+        <p>基于你过去 4 周同一个星期几的数据，找到规律性模式。比如你连续 4 个周三都在下午崩塌，App 就会预测下个周三大概率也会。完全在本地计算，不使用 AI 或联网。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>联系开发者</h2>
+      <p>如果你遇到 Bug、有功能建议、或任何问题，欢迎随时联系：</p>
+      <p style="margin-top:12px;"><strong>邮箱：</strong>xsame4869@gmail.com</p>
+      <p style="margin-top:4px;"><strong>响应时间：</strong>通常 24 小时内回复</p>
+
+      <a href="mailto:xsame4869@gmail.com?subject=元气手账 iOS 反馈" class="contact-btn">发送邮件</a>
+    </div>
+
+    <div class="card">
+      <h2>版本信息</h2>
+      <p>当前版本：1.0</p>
+      <p>最低系统要求：iOS 17.0</p>
+      <p>支持设备：iPhone、iPad</p>
+    </div>
+
+    <footer>
+      <p>© 2026 元气手账 · 你的精力都被谁偷走了？</p>
+      <p style="margin-top:8px;"><a href="privacy.html" style="color:#64748b;">隐私政策</a></p>
+    </footer>
+  </div>
+</body>
+</html>
